@@ -38,5 +38,8 @@ export default ({ config }: ConfigContext): ExpoConfig => ({
   ],
   extra: {
     uri: process.env.URI,
+    eas: {
+      projectId: '723b8c0c-08e1-4c87-b228-6d193c4d0b8b',
+    },
   },
 });
