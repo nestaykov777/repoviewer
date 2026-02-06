@@ -22,6 +22,12 @@ The `.env` file contains sensitive app configuration and is not committed to the
   npm install
   ```
 
+- Create a `.env` file from the example (safe for demo as its not containing any secure info, but once secure data will be added it will be provided seperately or using git-crypt):
+
+  ```sh
+  cp .env.example .env
+  ```
+
 - Build and run iOS and Android development builds:
 
   ```sh
