@@ -1,5 +1,4 @@
 import {
-  Image,
   StyleProp,
   Text,
   TouchableOpacity,
@@ -7,6 +6,7 @@ import {
   ViewStyle,
 } from 'react-native';
 
+import { Image } from 'expo-image';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 

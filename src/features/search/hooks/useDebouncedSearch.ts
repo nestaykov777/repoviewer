@@ -8,6 +8,7 @@ export function useDebouncedSearch() {
   const { query, debouncedQuery, setQuery, setDebouncedQuery, clearSearch } =
     useSearchStore();
 
+  // Waits 400ms after last keystroke before triggering search
   const debouncedSetQuery = useMemo(
     () =>
       debounce((value: string) => {

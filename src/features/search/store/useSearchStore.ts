@@ -8,6 +8,7 @@ interface SearchState {
   clearSearch: () => void;
 }
 
+// Tracks both raw input and debounced query for search
 export const useSearchStore = create<SearchState>((set) => ({
   query: '',
   debouncedQuery: '',

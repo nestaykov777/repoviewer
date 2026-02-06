@@ -3,6 +3,7 @@ import { StateStorage } from 'zustand/middleware';
 
 export const storage = createMMKV();
 
+// Zustand-compatible adapter for MMKV persistence
 export const mmkvStorage: StateStorage = {
   getItem: (name: string) => {
     return storage.getString(name) ?? null;

@@ -14,6 +14,7 @@ interface SettingsState {
   setThemeMode: (themeMode: ThemeMode) => void;
 }
 
+// Persisted via MMKV so preferences survive app restarts
 export const useSettingsStore = create<SettingsState>()(
   persist(
     (set) => ({

@@ -9,6 +9,7 @@ export function useNetworkStatus() {
   const wasConnected = useRef(true);
   const [isConnected, setIsConnected] = useState(true);
 
+  // Subscribe to connectivity changes; show toast on disconnect
   useEffect(() => {
     const unsubscribe = NetInfo.addEventListener((state) => {
       const connected = state.isConnected ?? true;

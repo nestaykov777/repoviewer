@@ -18,8 +18,8 @@ export function useSearchRepos(query: string) {
       return allPages.length + 1;
     },
     enabled: query.trim().length > 0,
-    staleTime: 5 * 60 * 1000,
-    gcTime: 30 * 60 * 1000,
+    staleTime: 5 * 60 * 1000, // Cache results for 5 min
+    gcTime: 30 * 60 * 1000, // Keep unused cache for 30 min
     refetchOnWindowFocus: false,
   });
 }

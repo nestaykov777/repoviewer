@@ -1,12 +1,13 @@
 import { GitHubRepository, GitHubSearchResponse } from '../types/github';
 
 const BASE_URL = 'https://api.github.com';
-const PER_PAGE = 30;
+const PER_PAGE = 30; // Results per page for paginated search
 
 export async function searchRepositories(
   query: string,
   page: number = 1,
 ): Promise<GitHubSearchResponse> {
+  // Skip API call for empty queries
   if (!query.trim()) {
     return { total_count: 0, incomplete_results: false, items: [] };
   }

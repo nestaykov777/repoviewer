@@ -19,15 +19,17 @@ import { Navigation } from './navigation';
 import { useSettingsStore } from '../features/settings/store/useSettingsStore';
 import { useNetworkStatus } from '../shared/hooks/useNetworkStatus';
 
+// Single QueryClient instance shared across the app
 const queryClient = new QueryClient();
 
+// Preloads navigation and tab bar icons
 Asset.loadAsync([
   ...NavigationAssets,
   require('../shared/assets/feed.png'),
   require('../shared/assets/gear.png'),
 ]);
 
-// Set the animation options. This is optional.
+// Sets the animation options. This is optional.
 SplashScreen.setOptions({
   duration: 350,
   fade: true,

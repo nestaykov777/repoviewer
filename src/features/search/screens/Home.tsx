@@ -32,6 +32,7 @@ export function Home() {
     refetch,
   } = useSearchRepos(debouncedQuery);
 
+  // Flattens all pages into a single list for the FlashList
   const repositories = data?.pages.flatMap((page) => page.items) ?? [];
 
   const handleRepoPress = (repository: GitHubRepository) => {
@@ -41,6 +42,7 @@ export function Home() {
     });
   };
 
+  // Loads next page when user scrolls near the bottom
   const handleEndReached = () => {
     if (hasNextPage && !isFetchingNextPage) {
       fetchNextPage();

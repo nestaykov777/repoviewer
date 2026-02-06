@@ -1,5 +1,4 @@
 import {
-  Image,
   Linking,
   ScrollView,
   Text,
@@ -8,6 +7,7 @@ import {
 } from 'react-native';
 
 import { StaticScreenProps } from '@react-navigation/native';
+import { Image } from 'expo-image';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 
@@ -41,6 +41,7 @@ export function RepoDetail({ route }: Props) {
     return <ErrorState message={error?.message} onRetry={refetch} />;
   }
 
+  // Opens the repo's GitHub page in the device browser
   const handleOpenInBrowser = () => {
     Linking.openURL(repository.html_url);
   };

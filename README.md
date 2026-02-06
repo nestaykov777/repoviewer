@@ -4,6 +4,20 @@ A mobile app for searching and exploring GitHub repositories. Browse repos, view
 
 Expo is used to maximize productivity and focus on scalable app architecture, performance optimizations, and UX within the limited time window. It allows full access to native APIs when needed (via the Bare workflow), while providing excellent developer experience, fast iteration, and reliable builds.
 
+# Demo Folder
+
+Check the Demo folder for screenshots and videos
+
+## Performance
+
+1. FlashList is used for efficient, high-performance list rendering at scale
+
+2. TanStack Query handles data fetching with smart caching, background refetching, and request deduplication
+
+3. Expo-Image is an alternative to react-native-fast-image -> provides optimized image loading with aggressive caching and priority control
+
+4. Unistyles enables performant, scalable styling with native-driven theming, breakpoint support, and minimal runtime overhead, keeping the UI fast, smooth, and responsive even under heavy load.
+
 ## Functionality
 
 Search results are cached locally to reduce API calls and improve responsiveness. User preferences such as language and dark/light mode are persisted on the device using MMKV, so settings are preserved between sessions. App configuration (e.g. API base URL) is managed through a `.env` file.
