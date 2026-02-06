@@ -1,0 +1,64 @@
+{
+  "navigation": {
+    "feed": "Feed",
+    "home": "Home",
+    "close": "Close",
+    "repoDetail": "Repository",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "Home Screen",
+    "subtitle": "Open up 'src/App.tsx' to start working on your app!",
+    "goToProfile": "Go to Profile",
+    "goToSettings": "Go to Settings"
+  },
+  "profile": {
+    "title": "{{user}}'s Profile"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "languageEn": "English",
+    "languageUk": "Ukrainian",
+    "theme": "Appearance",
+    "themeLight": "Light",
+    "themeDark": "Dark",
+    "themeAuto": "Auto"
+  },
+  "notFound": {
+    "title": "404",
+    "goHome": "Go to Home"
+  },
+  "search": {
+    "placeholder": "Search GitHub repositories...",
+    "initialTitle": "Search Repositories",
+    "initialSubtitle": "Type a keyword to search GitHub repositories",
+    "noResultsTitle": "No Results",
+    "noResultsSubtitle": "No repositories matched your search. Try different keywords."
+  },
+  "repo": {
+    "stars": "{{count}} stars",
+    "updated": "Updated {{date}}"
+  },
+  "repoDetail": {
+    "stars": "Stars",
+    "forks": "Forks",
+    "issues": "Issues",
+    "watchers": "Watchers",
+    "language": "Language",
+    "license": "License",
+    "updated": "Last updated",
+    "created": "Created",
+    "topics": "Topics",
+    "openInBrowser": "Open in Browser"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "generic": "An unexpected error occurred. Please try again.",
+    "retry": "Retry",
+    "noInternet": "No internet connection"
+  },
+  "loading": {
+    "default": "Loading"
+  }
+}

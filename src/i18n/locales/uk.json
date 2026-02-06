@@ -1,0 +1,64 @@
+{
+  "navigation": {
+    "feed": "Стрічка",
+    "home": "Головна",
+    "close": "Закрити",
+    "repoDetail": "Репозиторій",
+    "settings": "Налаштування"
+  },
+  "home": {
+    "title": "Головний екран",
+    "subtitle": "Відкрийте 'src/App.tsx', щоб почати працювати над додатком!",
+    "goToProfile": "Перейти до профілю",
+    "goToSettings": "Перейти до налаштувань"
+  },
+  "profile": {
+    "title": "Профіль {{user}}"
+  },
+  "settings": {
+    "title": "Налаштування",
+    "language": "Мова",
+    "languageEn": "Англійська",
+    "languageUk": "Українська",
+    "theme": "Оформлення",
+    "themeLight": "Світла",
+    "themeDark": "Темна",
+    "themeAuto": "Авто"
+  },
+  "notFound": {
+    "title": "404",
+    "goHome": "На головну"
+  },
+  "search": {
+    "placeholder": "Шукати репозиторії GitHub...",
+    "initialTitle": "Пошук репозиторіїв",
+    "initialSubtitle": "Введіть ключове слово для пошуку репозиторіїв GitHub",
+    "noResultsTitle": "Немає результатів",
+    "noResultsSubtitle": "Жоден репозиторій не відповідає вашому пошуку. Спробуйте інші ключові слова."
+  },
+  "repo": {
+    "stars": "{{count}} зірок",
+    "updated": "Оновлено {{date}}"
+  },
+  "repoDetail": {
+    "stars": "Зірки",
+    "forks": "Форки",
+    "issues": "Проблеми",
+    "watchers": "Стежать",
+    "language": "Мова",
+    "license": "Ліцензія",
+    "updated": "Останнє оновлення",
+    "created": "Створено",
+    "topics": "Теми",
+    "openInBrowser": "Відкрити в браузері"
+  },
+  "error": {
+    "title": "Щось пішло не так",
+    "generic": "Сталася неочікувана помилка. Будь ласка, спробуйте ще раз.",
+    "retry": "Повторити",
+    "noInternet": "Немає підключення до інтернету"
+  },
+  "loading": {
+    "default": "Завантаження"
+  }
+}
