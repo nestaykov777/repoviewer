@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 
-import { getRepository } from '../api/github';
+import { getRepository } from '../../../shared/api/github';
 
 export function useRepoDetails(owner: string, repo: string) {
   return useQuery({

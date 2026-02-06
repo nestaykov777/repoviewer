@@ -5,15 +5,15 @@ import { FlashList } from '@shopify/flash-list';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 
-import { EmptyState } from '../../components/EmptyState';
-import { ErrorState } from '../../components/ErrorState';
-import { LoadingState } from '../../components/LoadingState';
-import { RepoCard } from '../../components/RepoCard';
-import { SearchBar } from '../../components/SearchBar';
-import { useDebouncedSearch } from '../../hooks/useDebouncedSearch';
-import { useNetworkStatus } from '../../hooks/useNetworkStatus';
-import { useSearchRepos } from '../../hooks/useSearchRepos';
-import { GitHubRepository } from '../../types/github';
+import { ErrorState } from '../../../shared/components/ErrorState';
+import { LoadingState } from '../../../shared/components/LoadingState';
+import { useNetworkStatus } from '../../../shared/hooks/useNetworkStatus';
+import { GitHubRepository } from '../../../shared/types/github';
+import { EmptyState } from '../components/EmptyState';
+import { RepoCard } from '../components/RepoCard';
+import { SearchBar } from '../components/SearchBar';
+import { useDebouncedSearch } from '../hooks/useDebouncedSearch';
+import { useSearchRepos } from '../hooks/useSearchRepos';
 
 export function Home() {
   const navigation = useNavigation();

@@ -6,11 +6,11 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { useTranslation } from 'react-i18next';
 
-import feed from '../assets/feed.png';
-import gear from '../assets/gear.png';
-import { Home } from './screens/Home';
-import { RepoDetail } from './screens/RepoDetail';
-import { Settings } from './screens/Settings';
+import { RepoDetail } from '../../features/repo-detail/screens/RepoDetail';
+import { Home } from '../../features/search/screens/Home';
+import { Settings } from '../../features/settings/screens/Settings';
+import feed from '../../shared/assets/feed.png';
+import gear from '../../shared/assets/gear.png';
 
 type RootStackParamList = {
   HomeTabs: undefined;

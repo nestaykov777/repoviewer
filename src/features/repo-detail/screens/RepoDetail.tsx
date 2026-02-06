@@ -11,11 +11,11 @@ import { StaticScreenProps } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 
-import { ErrorState } from '../../components/ErrorState';
-import { LoadingState } from '../../components/LoadingState';
-import { MetaRow } from '../../components/MetaRow';
-import { StatBadge } from '../../components/StatBadge';
-import { useRepoDetails } from '../../hooks/useRepoDetails';
+import { ErrorState } from '../../../shared/components/ErrorState';
+import { LoadingState } from '../../../shared/components/LoadingState';
+import { MetaRow } from '../components/MetaRow';
+import { StatBadge } from '../components/StatBadge';
+import { useRepoDetails } from '../hooks/useRepoDetails';
 
 type Props = StaticScreenProps<{
   owner: string;

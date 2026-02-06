@@ -1,5 +1,5 @@
-import './theme/unistyles';
-import './i18n';
+import '../shared/theme/unistyles';
+import '../shared/i18n';
 
 import * as React from 'react';
 import { useColorScheme } from 'react-native';
@@ -15,16 +15,16 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { Toaster } from 'sonner-native';
 
-import { useNetworkStatus } from './hooks/useNetworkStatus';
 import { Navigation } from './navigation';
-import { useSettingsStore } from './store/useSettingsStore';
+import { useSettingsStore } from '../features/settings/store/useSettingsStore';
+import { useNetworkStatus } from '../shared/hooks/useNetworkStatus';
 
 const queryClient = new QueryClient();
 
 Asset.loadAsync([
   ...NavigationAssets,
-  require('./assets/feed.png'),
-  require('./assets/gear.png'),
+  require('../shared/assets/feed.png'),
+  require('../shared/assets/gear.png'),
 ]);
 
 // Set the animation options. This is optional.

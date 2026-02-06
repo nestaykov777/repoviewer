@@ -3,8 +3,8 @@ import { ScrollView, Text, TouchableOpacity, View } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 
-import { Language, useSettingsStore } from '../../store/useSettingsStore';
-import { ThemeMode } from '../../theme/helpers';
+import { ThemeMode } from '../../../shared/theme/helpers';
+import { Language, useSettingsStore } from '../store/useSettingsStore';
 
 export function Settings() {
   const { t } = useTranslation();

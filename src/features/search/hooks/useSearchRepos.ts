@@ -1,6 +1,6 @@
 import { useInfiniteQuery } from '@tanstack/react-query';
 
-import { searchRepositories } from '../api/github';
+import { searchRepositories } from '../../../shared/api/github';
 
 export function useSearchRepos(query: string) {
   return useInfiniteQuery({

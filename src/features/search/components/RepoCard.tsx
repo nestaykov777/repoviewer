@@ -10,7 +10,7 @@ import {
 import { useTranslation } from 'react-i18next';
 import { StyleSheet } from 'react-native-unistyles';
 
-import { GitHubRepository } from '../types/github';
+import { GitHubRepository } from '../../../shared/types/github';
 
 interface RepoCardProps {
   repository: GitHubRepository;
